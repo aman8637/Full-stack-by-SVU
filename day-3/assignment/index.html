@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>John Doe – Web Developer</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f4f4f4;">
+
+    <!-- Header Section -->
+    <header style="background-color: #333; color: white; padding: 10px 0;">
+        <h1 style="text-align: center;">Aman Kumar singh – Web Developer</h1>
+        <nav style="text-align: center;">
+            <a href="#home" style="color: white; margin: 0 15px; text-decoration: none;">Home</a>
+            <a href="#about" style="color: white; margin: 0 15px; text-decoration: none;">About</a>
+            <a href="#skills" style="color: white; margin: 0 15px; text-decoration: none;">Skills</a>
+            <a href="#projects" style="color: white; margin: 0 15px; text-decoration: none;">Projects</a>
+            <a href="#contact" style="color: white; margin: 0 15px; text-decoration: none;">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" style="text-align: center; padding: 50px;">
+        <img src="./IMG_20230325_160436.jpg" alt="Profile Picture" style="width: 150px; border-radius: 50%;">
+        <h2>Hello! I am Aman kumar singh, a passionate Web Developer</h2>
+        <p>I love creating beautiful and functional web applications.</p>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" style="padding: 20px; background-color: #fff;">
+        <h2>About Me</h2>
+        <p>I am a web developer with a degree in Computer Science. I have experience in building responsive websites and web applications. My interests include coding, design, and learning new technologies.</p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" style="padding: 20px; background-color: #f9f9f9;">
+        <h2>Skills</h2>
+        <ul style="list-style-type: none; padding: 0;">
+            <li><strong>HTML</strong></li>
+            <li><strong>CSS</strong></li>
+            <li><strong>JavaScript</strong></li>
+            <li><strong>React</strong></li>
+            <li><strong>Node.js</strong></li>
+        </ul>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" style="padding: 20px; background-color: #fff;">
+        <h2>Projects</h2>
+        <table style="width: 100%; border-collapse: collapse;">
+            <tr style="background-color: #f2f2f2;">
+                <th style="border: 1px solid #ddd; padding: 8px;">Project Name</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Description</th>
+                <th style="border: 1px solid #ddd; padding: 8px;">Technologies Used</th>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><a href="https://github.com/johndoe/project1" style="text-decoration: none; color: #333;">Project 1</a></td>
+                <td style="border: 1px solid #ddd; padding: 8px;">A web application for managing tasks.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">HTML, CSS, JavaScript</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><a href="https://github.com/johndoe/project2" style="text-decoration: none; color: #333;">Project 2</a></td>
+                <td style="border: 1px solid #ddd; padding: 8px;">A personal blog platform.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">HTML, CSS, React</td>
+            </tr>
+            <tr>
+                <td style="border: 1px solid #ddd; padding: 8px;"><a href="https://github.com/johndoe/project3" style="text-decoration: none; color: #333;">Project 3</a></td>
+                <td style="border: 1px solid #ddd; padding: 8px;">An e-commerce website.</td>
+                <td style="border: 1px solid #ddd; padding: 8px;">HTML, CSS, Node.js</td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" style="padding: 20px; background-color: #f9f9f9;">
+        <h2>Contact Me</h2>
+        <form style="display: flex; flex-direction: column; max-width: 400px; margin: auto;">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required style="margin-bottom: 10px; padding: 8px;">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required style="margin-bottom: 10px; padding: 8px;">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required style="margin-bottom: 10px; padding: 8px;"></textarea>
+            <button type="submit" style="padding: 10px; background-color: #333; color: white; border: none; cursor: pointer;">Submit</button>
+        </form>
+    </section>
+
+    <!-- Footer Section -->
+    <footer style="text-align: center; padding: 10px; background-color: #333; color: white;">
+        <p>© 2024 John Doe. All rights reserved.</p>
+        <div>
+            <a href="https://twitter.com/johndoe" style="color: white; margin: 0 10px;">Twitter</a>
+            <a href="https://linkedin.com/in/johndoe" style="color: white; margin: 0 10px;">LinkedIn</a>
+            <a href="https://github.com/johndoe" style="color: white; margin: 0 10px;">GitHub</a>
+        </div>
+    </footer>
+
+</body>
+</html> ### Additional Features
+
+To enhance the portfolio webpage, consider implementing the following features:
+
+1. **Smooth Scrolling**: Add a smooth scrolling effect for navigation links by including the following JavaScript snippet at the end of the body section:
+
+```html
+<script>
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
