@@ -36,8 +36,5 @@ form.addEventListener("submit", function (e){
   tr.append(td1,td2,td3,td4,td5);
   document.getElementById("tbody").append(tr);
 
-  name="";
-  email="";
-  phone="";
-  password="";
+  form.requestFullscreen()
 });
