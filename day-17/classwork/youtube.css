@@ -1,9 +1,113 @@
-.nav{
-    width: 55px;
-    height: 55px;
-}
-#div1{
-    width: 50px;
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  .nav {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav .left {
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+  }
+  .nav .left .three {
+    width: 30px;
+    height: 40px;
+  }
+  .nav .left .logo {
+    margin-left: 10px;
+    display: flex;
+    width: 90px;
     height: 50px;
-    background-color: red;
-}
+  }
+  
+  .nav .searchBar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nav .searchBar div {
+    display: flex;
+    align-items: center;
+  }
+  .nav .searchBar .input input {
+    width: 500px;
+    height: 40px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    border: 1px solid grey;
+    padding-left: 10px;
+  }
+  .searchimg {
+    background-color: rgb(255, 250, 250);
+    width: 25px;
+    height: 25px;
+    padding: 7px 20px;
+    border: 1px solid gray;
+    border-left: 0px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    cursor: pointer;
+  }
+  .nav .searchBar .mic {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: rgb(227, 227, 227);
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .nav .searchBar .mic img {
+    width: 25px;
+    height: 25px;
+    mix-blend-mode: multiply;
+  }
+  
+  .nav .right {
+    display: flex;
+    align-items: center;
+  }
+  .nav .right .create {
+    display: flex;
+    align-items: center;
+    height: 35px;
+    background-color: rgb(235, 233, 233);
+    padding: 0 4px;
+    border-radius: 60px;
+  }
+  .nav .right span {
+    padding-right: 8px;
+    padding-left: 8px;
+    font-size: 32px;
+  }
+  .nav .right .account {
+    background-color: rgb(226, 225, 225);
+    /* padding: 4px; */
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  height: 40PX;
+    font-weight: 500;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  .nav .right .account P{
+    
+    padding: 15px;
+    
+  }
+  .notiimg {
+    width: 40px;
+    height: 40px;
+    padding-left: 10px;
+    padding-right: 20px;
+  }
